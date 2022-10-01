@@ -1,0 +1,199 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+}
+
+/* ======== General ============== */
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+/* ========== NavBar CSS ============== */
+
+header.header {
+  background-color: #1a2939;
+}
+
+header nav {
+  position: relative;
+  height: 64px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+header nav .mobile-bar {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 20px;
+  display: none;
+}
+
+.checkbtn {
+  font-size: 30px;
+  color: #fff;
+  cursor: pointer;
+}
+
+header label.logo {
+  color: #ed2853;
+  font-size: 30px;
+  font-weight: 300;
+}
+
+header label.logo span {
+  color: #fff;
+  font-weight: 500;
+}
+
+header nav ul.menu-items {
+  display: flex;
+  align-items: center;
+}
+
+header nav ul.menu-items li {
+  display: inline-block;
+  line-height: normal;
+  margin: 0 10px;
+  cursor: pointer;
+}
+
+header nav ul.menu-items li:last-child {
+  margin-right: 0;
+  border: none;
+  /* padding: 1px 20px; */
+  border: 1px solid #f12953;
+  background: #f12953;
+  box-shadow: inset 0 0 20px 10px #d3133b;
+  transition: all 0.5s;
+}
+
+header nav ul li a {
+  color: white;
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+  display: block;
+}
+
+.menu-btns {
+  margin-left: 20px;
+}
+
+header nav .menu-btns ul li {
+  border: 1px solid #fff;
+  padding: 10px 20px;
+  margin: 0 4px;
+  border-radius: 5px;
+}
+
+header nav .menu-btns li:last-child:hover {
+  background-color: transparent;
+  box-shadow: inset 0 0 20px 10px transparent;
+  border: 1px solid #fff;
+}
+
+header nav .menu-btns li:last-child:hover a {
+  color: #ed2853;
+}
+
+header nav .menu-btns li:hover {
+  border: 1px solid #f12953;
+  background: #f12953;
+  box-shadow: inset 0 0 20px 10px #d3133b;
+  transition: all 0.5s;
+  color: #fff;
+}
+
+header nav ul.menu-items > li a:hover,
+header nav ul.menu-items > li a.active {
+  background-color: none;
+  color: #ed2853;
+}
+
+header nav ul li a:hover {
+}
+
+@media screen and (max-width: 952px) {
+  header label.logo {
+    color: #ed2853;
+  }
+
+  header nav ul li a {
+    color: white;
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 1260px) {
+  header nav .mobile-bar {
+    display: block;
+  }
+
+  header nav ul.menu-items {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background-color: #1a2939;
+    top: 64px;
+    left: -100%;
+    text-align: center;
+    transition: 0.5s;
+  }
+
+  header nav ul.menu-items {
+    flex-direction: column;
+  }
+
+  header nav ul.menu-items li {
+    display: block;
+    margin-top: 2rem;
+  }
+
+  .menu-items.active {
+    left: 0;
+  }
+}
+
+/* ========== Main Hero CSS ============ */
+
+.companyz-hero {
+  background-image: url(images/MainHeaderImage.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.companyz-hero > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60vh;
+}
+
+.heading p {
+  font-size: 32px;
+  text-align: center;
+  color: white;
+}
+
+.heading h1 {
+  font-size: 55px;
+  text-align: center;
+  color: white;
+}
