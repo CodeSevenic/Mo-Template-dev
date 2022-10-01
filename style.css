@@ -184,7 +184,7 @@ header nav ul li a:hover {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 60vh;
+  height: 70vh;
 }
 
 .heading p {
@@ -246,6 +246,7 @@ header nav ul li a:hover {
   align-items: center;
   flex-direction: column;
   min-height: 40vh;
+  padding: 60px 0;
 }
 .service-widgets > div > .icon-grid-wrapper {
   display: grid;
@@ -262,8 +263,8 @@ header nav ul li a:hover {
 }
 
 .icon-widget > div {
-  height: 80px;
-  width: 80px;
+  height: 70px;
+  width: 70px;
 }
 
 .icon-widget > div img {
@@ -271,12 +272,13 @@ header nav ul li a:hover {
 }
 
 .icon-widget > h3 {
-  margin-top: 1rem;
+  margin-top: 1.5rem;
   height: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
   color: #1a2939;
+  font-size: 1rem;
 }
 
 .services-info {
@@ -290,4 +292,95 @@ header nav ul li a:hover {
 
 .services-info p {
   font-size: 14px;
+}
+
+/* ========== About Section ========== */
+section.about-section > div {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0px, 1fr));
+  gap: 50px;
+  padding: 50px 0;
+}
+
+.about-info-box > h3 {
+  font-size: 24px;
+  color: #1a2939;
+  font-weight: 500;
+  margin-bottom: 20px;
+  line-height: 34px;
+}
+
+.about-info-box > a {
+  display: block;
+  border-bottom: 2px solid #ed2853;
+  width: fit-content;
+  padding-bottom: 5px;
+  text-transform: uppercase;
+  font-size: 12px;
+  margin-top: 50px;
+  letter-spacing: 3px;
+  transition: all 0.5s ease;
+}
+
+.about-info-box > a:hover {
+  letter-spacing: 4px;
+}
+
+.about-info-box > p {
+  line-height: 24px;
+  min-height: 144px;
+}
+
+/* =========== Award Section =========== */
+.awards-section {
+  padding: 60px 0;
+  background-image: url(/images/AwardWinningPlatformStrip.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.awards-section .award-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0px, 1fr));
+  color: #ffffff;
+}
+
+.grid-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.grid-block h2 {
+  font-size: 54px;
+  color: #ffffff;
+  font-weight: 300;
+}
+
+.grid-block .box-content > a {
+  margin-top: 50px;
+  display: block;
+  color: #ffffff;
+  text-transform: uppercase;
+  border-bottom: 2px solid #ffffff;
+  width: fit-content;
+  padding-bottom: 5px;
+  letter-spacing: 3px;
+  transition: all 0.5s ease;
+}
+
+.grid-block .box-content > a:hover {
+  letter-spacing: 4px;
+}
+
+.award-icon {
+  width: 48px;
+  height: 63px;
+}
+
+.award-icon > img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
 }
