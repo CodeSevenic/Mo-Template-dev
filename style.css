@@ -273,10 +273,6 @@ header nav ul li a:hover {
   .companyz-hero > div {
     height: 60vh;
   }
-
-  .phone-image img {
-    right: 15px;
-  }
 }
 
 /* ========== Service Widgets CSS ========= */
@@ -661,6 +657,14 @@ section.about-section > div {
   .offer-info a {
     font-size: 10px;
     padding: 15px 20px;
+  }
+
+  .phone-image img {
+    right: 15px;
+  }
+
+  .offer-info > p {
+    text-align: center;
   }
 }
 
