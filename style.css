@@ -652,7 +652,7 @@ section.about-section > div {
     margin-top: 40px;
   }
 }
-
+/*  */
 @media screen and (max-width: 480px) {
   .offer-info a {
     font-size: 10px;
