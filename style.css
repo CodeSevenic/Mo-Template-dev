@@ -305,6 +305,10 @@ header nav ul li a:hover {
   .companyz-hero > div {
     height: 60vh;
   }
+
+  .companyz-hero {
+    background-position: 70%;
+  }
 }
 
 /* ========== Service Widgets CSS ========= */
@@ -576,7 +580,10 @@ section.about-section > div {
   }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 480px) {
+  .awards-section {
+    background-position: 43%;
+  }
 }
 
 /* ============= CTA Section CSS ============== */
