@@ -281,7 +281,7 @@ header nav ul li a:hover {
 
 /* ========== Service Widgets CSS ========= */
 .service-widgets {
-  background-image: url(/images/IconBG.png);
+  background-image: url(images/IconBG.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
