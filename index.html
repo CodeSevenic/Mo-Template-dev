@@ -10,6 +10,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
 
   <body>
@@ -18,7 +19,7 @@
         <div id="mobi-bar" class="mobile-bar">
           <i class="fas fa-bars checkbtn"></i>
         </div>
-        <label for="" class="logo">COMPANY<span>Z</span></label>
+        <a href="" class="logo">COMPANY<span>Z</span></a>
         <ul class="menu-items">
           <li><a href="#" class="active">Home</a></li>
           <li><a href="#">About</a></li>
@@ -42,7 +43,7 @@
           <h1>Welcome to #TradeWars</h1>
           <p>Trade digital currency like a pro</p>
         </div>
-        <div class="cta-btns">
+        <div data-aos="fade-up" data-aos-delay="300" class="cta-btns">
           <a href="">Partner with us</a>
           <a href="">Open a free account</a>
         </div>
@@ -51,7 +52,7 @@
     <section class="service-widgets">
       <div class="container">
         <div class="icon-grid-wrapper">
-          <div class="icon-widget">
+          <div data-aos="fade-up" data-aos-delay="100" class="icon-widget">
             <div class="icon-img">
               <img
                 src="/assets/No-Monthly-Fees-Icon-Black.png"
@@ -60,13 +61,13 @@
             </div>
             <h3>No Monthly fess</h3>
           </div>
-          <div class="icon-widget">
+          <div data-aos="fade-up" data-aos-delay="200" class="icon-widget">
             <div class="icon-img">
               <img src="/assets/Online-Brocker-Icon-Black.png" alt="" />
             </div>
             <h3>#1 Online Broker</h3>
           </div>
-          <div class="icon-widget">
+          <div data-aos="fade-up" data-aos-delay="300" class="icon-widget">
             <div class="icon-img">
               <img
                 src="/assets/Lowest-Cost-Icon-Black.png"
@@ -75,13 +76,13 @@
             </div>
             <h3>Lowest Cost trading in South Africa</h3>
           </div>
-          <div class="icon-widget">
+          <div data-aos="fade-up" data-aos-delay="400" class="icon-widget">
             <div class="icon-img">
               <img src="/assets/Pioneers-of-CDF-Icon-Black.png" alt="" />
             </div>
             <h3>Pioneers of CFD &amp; Spread trading in SA</h3>
           </div>
-          <div class="icon-widget">
+          <div data-aos="fade-up" data-aos-delay="500" class="icon-widget">
             <div class="icon-img">
               <img
                 src="/assets/Forex-Icon-Black.png"
@@ -90,21 +91,21 @@
             </div>
             <h3>Forex | Commodities | Indices | CFD Equites</h3>
           </div>
-          <div class="icon-widget">
+          <div data-aos="fade-up" data-aos-delay="600" class="icon-widget">
             <div class="icon-img">
               <img
                 src="/assets/No-Monthly-Fees-Icon-Black.png"
                 alt="No-Monthly-Fees-Icon-Black"
               />
             </div>
-            <h3>Authorized Financial services provider <sup>**</sup></h3>
+            <h3>Authorized Financial services provider**</h3>
           </div>
         </div>
         <div class="services-info">
-          <p><sup>*</sup>Intellidex Top Stock Broker Awards 2016</p>
+          <p>*Intellidex Top Stock Broker Awards 2016</p>
           <p>
-            <sup>**</sup>CompanyZ is a subsidiary and a juristic representative
-            of Purple Group Limited, an authorized Financial Services Provider
+            **CompanyZ is a subsidiary and a juristic representative of Purple
+            Group Limited, an authorized Financial Services Provider
           </p>
         </div>
       </div>
@@ -155,7 +156,7 @@
           </div>
 
           <div class="grid-block inline-grid">
-            <div class="grid-box">
+            <div data-aos="fade-up" data-aos-delay="100" class="grid-box">
               <div class="award-icon">
                 <img
                   src="/assets/Badge01.png"
@@ -165,7 +166,7 @@
               <h4>Top Online Stock Btoker South Africa</h4>
               <p>Intellidex Stock Broker Awards 2016</p>
             </div>
-            <div class="grid-box">
+            <div data-aos="fade-up" data-aos-delay="200" class="grid-box">
               <div class="award-icon">
                 <img
                   src="/assets/Badge02.png"
@@ -178,7 +179,7 @@
           </div>
 
           <div class="grid-block inline-grid">
-            <div class="grid-box">
+            <div data-aos="fade-up" data-aos-delay="300" class="grid-box">
               <div class="award-icon">
                 <img
                   src="/assets/BestBadge.png"
@@ -188,7 +189,7 @@
               <h4>Top Online Stock Btoker South Africa</h4>
               <p>Intellidex Stock Broker Awards 2016</p>
             </div>
-            <div class="grid-box">
+            <div data-aos="fade-up" data-aos-delay="400" class="grid-box">
               <div class="award-icon">
                 <img
                   src="/assets/Badge01.png"
@@ -205,11 +206,11 @@
     <section class="cta-section">
       <div class="container">
         <div class="offer-grid">
-          <div class="phone-image">
+          <div data-aos="fade-right" data-aos-delay="100" class="phone-image">
             <img src="/images/phone.png" alt="Mobile Phone" />
           </div>
           <div class="offer-info">
-            <p>
+            <p data-aos="fade-up" data-aos-delay="100">
               At Company Z we thrive on offering education, sharing trading
               ideas and giving traders the best chance at success. Our team want
               you to make money and are themselves traders.
@@ -263,5 +264,12 @@
       </div>
     </footer>
     <script src="js/script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        delay: 50, // values from 0 to 3000, with step 50ms
+        duration: 800, // values from 0 to 3000, with step 50ms
+      });
+    </script>
   </body>
 </html>

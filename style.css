@@ -50,13 +50,14 @@ header nav .mobile-bar {
   cursor: pointer;
 }
 
-header label.logo {
+header a.logo {
   color: #ed2853;
   font-size: 30px;
   font-weight: 300;
+  display: block;
 }
 
-header label.logo span {
+header a.logo span {
   color: #fff;
   font-weight: 500;
 }
@@ -154,6 +155,7 @@ header nav ul li a:hover {
     left: -100%;
     text-align: center;
     transition: 0.5s;
+    z-index: 100;
   }
 
   header nav ul.menu-items {
@@ -162,7 +164,7 @@ header nav ul li a:hover {
 
   header nav ul.menu-items li {
     display: block;
-    margin-top: 2rem;
+    margin-top: 1.5rem;
   }
 
   .menu-items.active {
@@ -177,6 +179,7 @@ header nav ul li a:hover {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  padding: 80px 0;
 }
 
 .companyz-hero > div {
@@ -184,13 +187,14 @@ header nav ul li a:hover {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 70vh;
+  height: 65vh;
 }
 
 .heading p {
   font-size: 32px;
   text-align: center;
   color: white;
+  margin-top: 10px;
 }
 
 .heading h1 {
@@ -230,6 +234,49 @@ header nav ul li a:hover {
   color: #fff;
   box-shadow: none;
   border: 1px solid #fff;
+}
+
+@media screen and (max-width: 860px) {
+  .cta-btns > a {
+    min-height: 50px;
+    min-width: 200px;
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .cta-btns > a {
+    min-height: 50px;
+    min-width: 200px;
+    font-size: 14px;
+  }
+
+  .cta-btns {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 40px;
+  }
+
+  .heading p {
+    font-size: 24px;
+  }
+
+  .heading h1 {
+    font-size: 42px;
+    text-align: center;
+    color: white;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .companyz-hero > div {
+    height: 60vh;
+  }
+
+  .phone-image img {
+    right: 15px;
+  }
 }
 
 /* ========== Service Widgets CSS ========= */
@@ -279,6 +326,7 @@ header nav ul li a:hover {
   align-items: center;
   color: #1a2939;
   font-size: 1rem;
+  text-align: center;
 }
 
 .services-info {
@@ -292,6 +340,63 @@ header nav ul li a:hover {
 
 .services-info p {
   font-size: 14px;
+}
+
+@media screen and (max-width: 1160px) {
+  .services-info {
+    margin-top: 50px;
+    gap: 10px;
+  }
+
+  .services-info > p {
+    width: 100%;
+  }
+
+  .icon-widget > h3 {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 860px) {
+  .service-widgets > div > .icon-grid-wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    justify-content: center;
+    gap: 30px;
+  }
+
+  .icon-widget > div {
+    height: 50px;
+    width: 50px;
+  }
+
+  .icon-widget > h3 {
+    margin-top: 1.5rem;
+    font-size: 0.8rem;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .service-widgets > div > .icon-grid-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    justify-content: center;
+    gap: 30px;
+  }
+
+  .icon-widget > div {
+    height: 50px;
+    width: 50px;
+  }
+
+  .icon-widget > h3 {
+    margin-top: 1.5rem;
+    font-size: 0.8rem;
+  }
+
+  .service-widgets > div {
+    padding: 60px 40px;
+  }
 }
 
 /* ========== About Section ========== */
@@ -329,6 +434,20 @@ section.about-section > div {
 .about-info-box > p {
   line-height: 24px;
   min-height: 144px;
+}
+
+@media screen and (max-width: 860px) {
+}
+
+@media screen and (max-width: 767px) {
+  section.about-section > div {
+    grid-template-columns: repeat(1, minmax(0px, 1fr));
+  }
+
+  .about-info-box > p {
+    line-height: 24px;
+    min-height: unset;
+  }
 }
 
 /* =========== Award Section =========== */
@@ -405,6 +524,33 @@ section.about-section > div {
   align-items: center;
 }
 
+@media screen and (max-width: 860px) {
+  .awards-section .award-grid {
+    grid-template-columns: repeat(1, minmax(0px, 1fr));
+    gap: 50px;
+  }
+
+  .grid-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .grid-block h2 {
+    text-align: center;
+    font-size: 42px;
+  }
+
+  .grid-block .box-content > a {
+    text-align: center;
+    margin: 50px auto 0 auto;
+  }
+}
+
+@media screen and (max-width: 767px) {
+}
+
 /* ============= CTA Section CSS ============== */
 
 .cta-section .offer-grid {
@@ -464,6 +610,58 @@ section.about-section > div {
   box-shadow: none;
   border: 2px solid #ed2853;
   color: #ed2853;
+}
+
+@media screen and (max-width: 1200px) {
+  .phone-image img {
+    right: -50px;
+  }
+}
+@media screen and (max-width: 1020px) {
+  .phone-image img {
+    right: 0px;
+  }
+}
+
+@media screen and (max-width: 830px) {
+  .phone-image img {
+    right: 40px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .cta-section .offer-grid {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 50px;
+  }
+  .phone-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    position: relative;
+    right: 0;
+  }
+
+  .offer-info {
+    top: -80px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+  }
+  .offer-info a {
+    margin-top: 40px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .offer-info a {
+    font-size: 10px;
+    padding: 15px 20px;
+  }
 }
 
 /* ========== Footer CSS ========= */
@@ -539,4 +737,85 @@ footer.companyz-footer > div > div {
 .col-1-list > ul li a:hover,
 .footer-col-2 > ul li a:hover {
   color: #ed2853;
+}
+
+@media screen and (max-width: 979px) {
+  footer.companyz-footer > div {
+    display: flex;
+    color: #ffffff;
+    gap: 20px;
+    flex-direction: column;
+    justify-content: unset;
+  }
+
+  footer.companyz-footer > div > .footer-col-2 {
+    flex: 1 1 0%;
+    display: flex;
+    flex-direction: unset;
+    justify-content: space-between;
+    min-height: 0px;
+  }
+
+  .company-socials {
+    display: flex;
+    gap: 10px;
+    order: -1;
+  }
+}
+@media screen and (max-width: 767px) {
+  footer.companyz-footer > div {
+    display: flex;
+    color: #ffffff;
+    gap: 20px;
+    flex-direction: column;
+    justify-content: unset;
+  }
+
+  footer.companyz-footer > div > div {
+    align-items: center;
+  }
+
+  footer.companyz-footer > div > .footer-col-2 {
+    flex: 1 1 0%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 0px;
+    gap: 12px;
+  }
+
+  .company-socials {
+    display: flex;
+    gap: 10px;
+    order: 0;
+  }
+
+  .footer-col-2 > ul,
+  .company-socials {
+    align-self: unset;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .footer-col-1 .col-1-list > ul,
+  .footer-col-2 ul {
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  footer.companyz-footer > div > .footer-col-2 {
+    gap: 30px;
+  }
+}
+
+/* ============= General Media Query =========== */
+
+@media screen and (max-width: 1330px) {
+  .container {
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+  }
 }
