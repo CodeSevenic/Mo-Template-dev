@@ -453,7 +453,7 @@ section.about-section > div {
 /* =========== Award Section =========== */
 .awards-section {
   padding: 90px 0;
-  background-image: url(/images/AwardWinningPlatformStrip.png);
+  background-image: url(images/AwardWinningPlatformStrip.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
