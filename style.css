@@ -404,3 +404,64 @@ section.about-section > div {
   flex-direction: column;
   align-items: center;
 }
+
+/* ============= CTA Section CSS ============== */
+
+.cta-section .offer-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0px, 1fr));
+  align-items: center;
+  gap: 50px;
+}
+
+.phone-image {
+  position: relative;
+  width: 290px;
+  height: 500px;
+}
+
+.phone-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  position: absolute;
+  top: -55px;
+  right: -130px;
+  bottom: 0;
+}
+
+.offer-info {
+  grid-column: 2 / span 2;
+}
+
+.offer-info > p {
+  font-size: 24px;
+  color: #4a4a4a;
+  line-height: 34px;
+  max-width: 700px;
+  font-weight: 300;
+}
+
+.offer-info a {
+  display: block;
+  margin-top: 80px;
+  width: fit-content;
+  padding: 22px 42px;
+  border-radius: 14px;
+  text-transform: uppercase;
+  color: #ffffff;
+  font-size: 14px;
+  letter-spacing: 3px;
+  font-weight: bold;
+  background-color: #ed2853;
+  border: 2px solid #ed2853;
+  box-shadow: inset 0 0 20px -5px #d3133b;
+  transition: all 0.5s ease;
+}
+
+.offer-info a:hover {
+  background-color: transparent;
+  box-shadow: none;
+  border: 2px solid #ed2853;
+  color: #ed2853;
+}
