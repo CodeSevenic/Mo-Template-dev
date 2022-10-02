@@ -1,4 +1,6 @@
-﻿const burgerBar = document.getElementById('mobi-bar');
+﻿// Mobile Menu Trigger
+
+const burgerBar = document.getElementById('mobi-bar');
 const ul_enu = document.querySelector('header nav .menu-items');
 
 addEventListener('resize', function () {

@@ -333,7 +333,7 @@ section.about-section > div {
 
 /* =========== Award Section =========== */
 .awards-section {
-  padding: 60px 0;
+  padding: 90px 0;
   background-image: url(/images/AwardWinningPlatformStrip.png);
   background-position: center;
   background-repeat: no-repeat;
@@ -348,8 +348,9 @@ section.about-section > div {
 .grid-block {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  /* align-items: center; */
   justify-content: center;
+  gap: 30px;
 }
 
 .grid-block h2 {
@@ -377,10 +378,29 @@ section.about-section > div {
 .award-icon {
   width: 48px;
   height: 63px;
+  margin-bottom: 20px;
+}
+
+.award-icon > h4 {
+  font-size: 15px;
+  font-weight: bold;
+  line-height: 19px;
+}
+
+.grid-box > p {
+  font-size: 12px;
+  font-weight: bolder;
+  line-height: 19px;
 }
 
 .award-icon > img {
   width: 100%;
   height: 100%;
   object-fit: contain;
+}
+
+.grid-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
